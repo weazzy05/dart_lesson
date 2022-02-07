@@ -26,9 +26,8 @@ class BankCard
   BankCard.vip ({ required this.owner, required this.account, this.validityPeriod  = 2037 , this._balance = 15000000} );
   BankCard.y10({required String owner , required int account}) : this(owner, account , 2032);
   BankCard.y5({required String owner , required int account}) : this(owner, account , 2027);
-  @overrideW
+  @override
   String toString() {
-    // TODO: implement toString
     return "Onwer: $owner , personal account : $account , Balance: $_balance";
   }
 
